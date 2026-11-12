@@ -10,7 +10,7 @@ function Hero() {
         <a href="#projects" className="btn btn-primary">
           Ver proyectos
         </a>
-        <a href="/CV_English_MBS.pdf" className="btn btn-secondary" download>
+        <a href="CV_English_MBS.pdf" className="btn btn-secondary" download>
           Descargar CV
         </a>
       </div>
