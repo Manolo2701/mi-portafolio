@@ -1,8 +1,16 @@
+import { useLanguage } from "../context/LanguageContext";
+
 function Contact() {
+  const { language } = useLanguage();
+
   return (
     <section id="contact">
-      <h2>Contacto</h2>
-      <p>¿Hablamos? Puedes contactarme por cualquiera de estos canales:</p>
+      <h2>{language === "es" ? "Contacto" : "Contact"}</h2>
+      <p>
+        {language === "es"
+          ? "¿Hablamos? Puedes contactarme por cualquiera de estos canales:"
+          : "Let's talk! You can reach me through any of these channels:"}
+      </p>
       <ul className="contact-list">
         <li>
           📧{" "}
